@@ -1,3 +1,27 @@
+### Lecturas realizadas durante la concepción de este portfolio
+
+How To Learn CSS (Rachel Andrews)
+https://www.smashingmagazine.com/2019/01/how-to-learn-css/
+
+        Dice 15 minutos de lectura... Su artículo sí, pero si encadenas referencias, mejor hazte una taza de té.
+
+        Box Sizing (Marie Mosley)
+        https://css-tricks.com/box-sizing/
+
+            Chuleta visual content-box vs. border-box
+                https://i2.wp.com/css-tricks.com/wp-content/uploads/2010/09/widthbox.png?resize=367%2C604
+            Universal Box Sizing with Inheritance
+
+        The practical value of semantic HTML
+        https://www.brucelawson.co.uk/2018/the-practical-value-of-semantic-html/
+
+\*\* No lo he usado pero he aprendido a colocar el texto para que se lea en vertical y las letras separadas:
+
+    {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

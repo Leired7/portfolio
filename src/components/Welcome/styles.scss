@@ -1,0 +1,74 @@
+@import '../vars';
+
+.welcome {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-gretting {
+      width: 240px;
+      font-family: $font-comic;
+      color: $brown-color;
+      font-size: 32px;
+      text-align: center;
+      rotate: -8deg;
+      margin: 2em 1em 1em 1em;
+      background-color: $egg-color;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 32px;
+    grid-column: 2/3;
+    font-family: $font-comic;
+    color: $brown-color;
+  }
+
+  &__logo {
+    border-radius: 50%;
+    margin: 1.3rem;
+  }
+
+  &__presentation {
+    margin: 2rem;
+  }
+  &__subtitle {
+    grid-row: 2/3;
+    font-size: 18px;
+    color: $brown-color;
+    font-family: $font-comic;
+  }
+
+  &__button {
+    border: none;
+    width: 130px;
+    height: 40px;
+    background: $brown-color;
+    font-family: $font-text;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    color: $egg-color;
+    transition: all 0.2s ease 0.2s;
+    border: 1px solid $brown-color;
+    margin: 0 0 1rem 0;
+
+    &__text {
+      background-color: $brown-color;
+      color: $egg-color;
+      border: 1px solid $brown-color;
+    }
+    &__text:hover {
+      color: $egg-color;
+    }
+  }
+}

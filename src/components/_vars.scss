@@ -1,0 +1,25 @@
+/* Background image */
+$component-noiseURL: 'http://api.thumbr.it/whitenoise-50x50.png?background=4ea6ca00&noise=626262&density=42&opacity=13';
+$orange-noiseURL: 'http://api.thumbr.it/whitenoise-50x50.png?background=4ea6ca00&noise=f6b02d&density=28&opacity=4';
+
+/* Fonts names */
+$font-comic: Londrina Solid, cursive;
+$font-text: Fira Sans, sans-serif;
+
+/* Colors */
+$blue-color: #282c34;
+$white-color: #eaeaea;
+$brown-color: #2f2a16;
+$egg-color: #f6ae2d;
+$turquoise-color: #4bc9ac;
+$olive-color: #d2c355;
+$lightblue-color: #2ba1d4;
+$purple-color: #868fc7;
+$orange-color: #fc9127;
+
+/* Mixins */
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

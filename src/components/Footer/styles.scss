@@ -1,0 +1,24 @@
+@import '../vars';
+
+.footer {
+  &__container {
+    background-color: $white-color;
+    background-image: url($component-noiseURL);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 70px;
+    &-text {
+      @include flex-center;
+    }
+    &-title {
+      font-family: $font-comic;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      grid-column: 3/4;
+    }
+    &-network {
+      display: grid;
+      grid-template-rows: 2;
+    }
+  }
+}

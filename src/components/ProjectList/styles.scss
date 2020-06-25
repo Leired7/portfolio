@@ -1,0 +1,51 @@
+@import '../_vars';
+
+.section__portfolio {
+  @media (min-width: 768px) {
+    grid-column: 1/3;
+  }
+  &-title {
+    background-color: $blue-color;
+    height: 56px;
+    font-family: $font-comic;
+    font-size: 44px;
+    color: $white-color;
+    text-align: center;
+  }
+}
+
+.projects__container {
+  &-list {
+    background-color: $blue-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  &-item {
+    list-style-type: none;
+    padding: 0;
+    height: auto;
+  }
+}
+
+.line {
+  border: none;
+  height: 20px;
+  background-color: $blue-color;
+  //max-width: 200px;
+  padding: 0;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
