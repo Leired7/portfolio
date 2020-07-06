@@ -7,6 +7,9 @@
     width: 100vw;
     background-color: #282c34;
     background-image: url($orange-noiseURL);
+    @media (min-width: 320px) and (orientation: landscape) {
+      height: 500px;
+    }
     @media (min-width: $breakpointMinTablet) {
       width: 90vw;
       height: calc(100vh - 150px);
@@ -17,8 +20,9 @@
     background-color: $white-color;
     background-image: url(&component-noiseURL);
     border-radius: 32px;
-    height: 380px;
+    height: auto;
     width: 300px;
+    margin-top: 16px;
   }
   &__header {
     @include flex-center;
@@ -31,6 +35,10 @@
       font-size: 32px;
       text-align: center;
       rotate: -8deg;
+      -webkit-transform: rotate(-8deg); /* Safari & Chrome */
+      -moz-transform: rotate(-8deg); /* Firefox */
+      -ms-transform: rotate(-8deg); /* Internet Explorer */
+      -o-transform: rotate(-8deg); /* Opera */
       margin: 16px 16px;
       background-color: $egg-color;
     }
