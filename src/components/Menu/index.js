@@ -1,34 +1,44 @@
 import React from 'react';
 
 import './styles.scss';
-import logo from '../../images/Logo.png';
+import logo from 'images/Logo.png';
 
-import { Link } from 'wouter';
+import { NavLink } from 'react-router-dom';
 
-function Menu(props) {
-  console.log(props);
+function Menu() {
   return (
     <nav className="page__menu">
       <ul className="page__menu-list">
-        <li className="page__menu-list__item" onClick={props.toogleAbout}>
-          <Link href="/sobremi">
-            <a className="page__menu-list-link">SOBRE MI</a>
-          </Link>
-        </li>
-        {/* <li className="page__menu-list__item">Habilidades</li> */}
         <li className="page__menu-list__item">
-          <img
-            className="page__menu-list__item__logo"
-            src={logo}
-            alt="Logo, es un casco de astronauta"
-            width="50px"
-            heigth="50px"
-          />
+          <NavLink
+            to="/about"
+            className="page__menu-list__item-link"
+            activeClassName="selected"
+          >
+            SOBRE MI
+          </NavLink>
         </li>
+
         <li className="page__menu-list__item">
-          <Link href="/contacto">
-            <a className="page__menu-list-link">CONTACTO</a>
-          </Link>
+          <NavLink exact to="/" activeClassName="selected-nologo">
+            <img
+              className={'page__menu-list__item-logo'}
+              src={logo}
+              alt="Logo, es un casco de astronauta"
+              width="50px"
+              heigth="50px"
+            />
+          </NavLink>
+        </li>
+
+        <li className="page__menu-list__item">
+          <NavLink
+            to="/projectlist"
+            className="page__menu-list__item-link"
+            activeClassName="selected"
+          >
+            PROYECTOS
+          </NavLink>
         </li>
       </ul>
     </nav>

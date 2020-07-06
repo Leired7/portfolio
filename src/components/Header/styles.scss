@@ -1,5 +1,5 @@
 .page__header {
-  @media (min-width: 768px) {
+  @media (min-width: $breakpointMinTablet) {
     grid-row: 1/2;
   }
 }

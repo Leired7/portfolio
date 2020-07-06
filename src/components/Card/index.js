@@ -9,11 +9,11 @@ function Card({
   image,
   codeUrl,
   codeArialLabel,
+  technology,
   webUrl,
   webArialLabel,
   backgroundColor,
 }) {
-  console.log(image);
   return (
     <Fragment>
       <div
@@ -24,14 +24,12 @@ function Card({
           <h3 className="card__header-title">{name}</h3>
         </div>
         <div className="card__body">
-          <img
-            src={image}
-            alt={name}
-            className="card__body-image"
-            width="240px"
-            height="240px"
-          />
+          <img src={image} alt={name} className="card__body-image" />
           <p className="card__body-description">{description}</p>
+        </div>
+        <div className="card__body-technology">
+          <h3 className="card__body-technology-title">TECNOLOGÍAS: </h3>
+          <p className="card__body-technology-description">{technology}</p>
         </div>
 
         <div className="card__links-container">
@@ -39,8 +37,8 @@ function Card({
             target="blank"
             rel="noopener noreferrer"
             href={codeUrl}
-            className="card__link"
-            title="{codeArialLabel}"
+            className="card__link repo"
+            title={codeArialLabel}
           >
             Repositorio
           </a>
@@ -48,7 +46,7 @@ function Card({
             target="blank"
             rel="noopener noreferrer"
             href={webUrl}
-            className="card__link"
+            className="card__link demo"
             title={webArialLabel}
           >
             Demo

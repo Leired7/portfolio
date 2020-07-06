@@ -15,12 +15,15 @@ https://www.smashingmagazine.com/2019/01/how-to-learn-css/
         The practical value of semantic HTML
         https://www.brucelawson.co.uk/2018/the-practical-value-of-semantic-html/
 
-\*\* No lo he usado pero he aprendido a colocar el texto para que se lea en vertical y las letras separadas:
+\*\* colocar el texto para que se lea en vertical y las letras separadas:
 
     {
         writing-mode: vertical-lr;
         text-orientation: upright;
     }
+
+Approaches to Media Queries in Sass
+https://css-tricks.com/approaches-media-queries-sass/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

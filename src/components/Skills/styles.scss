@@ -1,0 +1,40 @@
+@import '../_vars';
+
+.skills {
+  &__content {
+    &-title {
+      @include flex-center;
+      font-family: $font-comic;
+      font-size: 30px;
+      color: $blue-color;
+    }
+
+    &-description {
+      @include flex-center;
+    }
+    &-subtitle {
+      font-family: $font-comic;
+      margin: 16px;
+      color: $blue-color;
+    }
+    &-text {
+      font-family: $font-text;
+      font-size: 16px;
+      color: $blue-color;
+      text-align: center;
+      background-color: $white-color;
+      padding: 8px;
+      max-width: 200px;
+      @media (min-width: $breakpointMinTablet) {
+        max-width: 400px;
+      }
+    }
+  }
+  &__line {
+    border: none;
+    height: 6px;
+    background-color: $white-color;
+    //max-width: 200px;
+    padding: 0;
+  }
+}

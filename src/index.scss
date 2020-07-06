@@ -1,0 +1,9 @@
+@import '../src/components/vars';
+
+#root {
+  @media (min-width: $breakpointMinTablet) {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,29 +1,20 @@
 import React, { Fragment, Component } from 'react';
 
 import './App.scss';
+import HomePage from '../pages/HomePage/HomePage';
 
-import Header from '../components/Header/index';
-import Main from '../components/Main/index';
-import WelcomePage from '../pages/Welcome/WelcomePage';
-import Footer from './Footer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faCheckSquare, faCoffee);
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      welcomeIsOpened: true,
-      aboutIsClosed: true,
+      aboutIsClosed: false,
     };
-    this.onCloseWelcome = this.onCloseWelcome.bind(this);
     this.toogleAbout = this.toogleAbout.bind(this);
-  }
-
-  onCloseWelcome() {
-    this.setState((prevState) => {
-      return {
-        welcomeIsOpened: !prevState.welcomeIsOpened,
-      };
-    });
   }
 
   toogleAbout() {
@@ -35,21 +26,14 @@ class App extends Component {
   }
 
   render() {
-    const welcomeIsOpened = this.state.welcomeIsOpened;
     const aboutIsClosed = this.state.aboutIsClosed;
+    console.log(aboutIsClosed);
+
     return (
       <Fragment>
-        {welcomeIsOpened ? (
-          <div className="page__container">
-            <Fragment>
-              <Header toogleAbout={this.toogleAbout} />
-              <Main aboutIsClosed={aboutIsClosed} />
-              <Footer />
-            </Fragment>
-          </div>
-        ) : (
-          <WelcomePage onClose={this.onCloseWelcome} />
-        )}
+        <div className="page__container">
+          <HomePage />
+        </div>
       </Fragment>
     );
   }

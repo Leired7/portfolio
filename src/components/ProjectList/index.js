@@ -2,15 +2,15 @@ import React from 'react';
 
 import './styles.scss';
 
-import Card from '../Card/index';
+import Card from 'components/Card/index';
 
-import { projectList } from '../../services/projectList';
+import { projectList } from 'services/projectList';
 
 function ProjectList() {
   const orderList = projectList
-    .sort(function (a, b) {
-      if (a.id < b.id) return -1;
-      if (a.id > b.id) return 1;
+    .sort(function (firstProjectItem, secondProjectItem) {
+      if (firstProjectItem.id < secondProjectItem.id) return -1;
+      if (firstProjectItem.id > secondProjectItem.id) return 1;
       return 0;
     })
     .reverse();
@@ -32,6 +32,7 @@ function ProjectList() {
                   id={project.id}
                   image={project.image}
                   name={project.name}
+                  technology={project.technology}
                   webArialLabel={project.webArialLabel}
                   webUrl={project.webUrl}
                 />

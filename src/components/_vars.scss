@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 /* Background image */
 $component-noiseURL: 'http://api.thumbr.it/whitenoise-50x50.png?background=4ea6ca00&noise=626262&density=42&opacity=13';
 $orange-noiseURL: 'http://api.thumbr.it/whitenoise-50x50.png?background=4ea6ca00&noise=f6b02d&density=28&opacity=4';
@@ -17,9 +19,31 @@ $lightblue-color: #2ba1d4;
 $purple-color: #868fc7;
 $orange-color: #fc9127;
 
+/* Breakpoint */
+$breakpointMinTablet: 768px;
+$breakpointMinDesktop: 1024px;
+
 /* Mixins */
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@mixin link {
+  border-radius: 2px;
+  color: $blue-color;
+  font-family: $font-comic;
+  font-size: 16px;
+  background-color: $egg-color;
+  //padding: 8px 16px;
+  max-height: 80px;
+  max-width: calc(100% + 80px);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  &:hover {
+    border: 2px dotted $blue-color;
+    color: $blue-color;
+    //opacity: 0.6;
+    transition: 0.1s;
+  }
 }

@@ -1,74 +1,65 @@
 @import '../vars';
 
 .welcome {
+  &__container {
+    @include flex-center;
+    height: calc(100vh - 150px);
+    width: 100vw;
+    background-color: #282c34;
+    background-image: url($orange-noiseURL);
+    @media (min-width: $breakpointMinTablet) {
+      width: 90vw;
+      height: calc(100vh - 150px);
+    }
+  }
+
+  &__content {
+    background-color: $white-color;
+    background-image: url(&component-noiseURL);
+    border-radius: 32px;
+    height: 380px;
+    width: 300px;
+  }
   &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
 
     &-gretting {
-      width: 240px;
+      width: 120px;
       font-family: $font-comic;
-      color: $brown-color;
+      color: $blue-color;
       font-size: 32px;
       text-align: center;
       rotate: -8deg;
-      margin: 2em 1em 1em 1em;
+      margin: 16px 16px;
       background-color: $egg-color;
     }
   }
 
   &__body {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__title {
     font-size: 32px;
     grid-column: 2/3;
     font-family: $font-comic;
-    color: $brown-color;
+    color: $blue-color;
   }
 
   &__logo {
     border-radius: 50%;
-    margin: 1.3rem;
+    margin: 16px;
   }
 
   &__presentation {
-    margin: 2rem;
+    margin: 32px;
+    letter-spacing: 0.7px;
   }
   &__subtitle {
     grid-row: 2/3;
     font-size: 18px;
-    color: $brown-color;
+    color: $blue-color;
     font-family: $font-comic;
-  }
-
-  &__button {
-    border: none;
-    width: 130px;
-    height: 40px;
-    background: $brown-color;
-    font-family: $font-text;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.6;
-    letter-spacing: 0.1em;
-    color: $egg-color;
-    transition: all 0.2s ease 0.2s;
-    border: 1px solid $brown-color;
-    margin: 0 0 1rem 0;
-
-    &__text {
-      background-color: $brown-color;
-      color: $egg-color;
-      border: 1px solid $brown-color;
-    }
-    &__text:hover {
-      color: $egg-color;
-    }
   }
 }

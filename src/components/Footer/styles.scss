@@ -1,24 +1,76 @@
 @import '../vars';
 
-.footer {
-  &__container {
-    background-color: $white-color;
-    background-image: url($component-noiseURL);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 70px;
-    &-text {
-      @include flex-center;
+.footer__container {
+  background-color: $white-color;
+  background-image: url($component-noiseURL);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90px;
+  z-index: 30;
+  @media (min-width: $breakpointMinTablet) {
+    height: 80px;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 40px 1fr;
+  @media (min-width: $breakpointMinTablet) {
+    grid-template-columns: 100%;
+  }
+
+  &-text {
+    @include flex-center;
+    grid-template-columns: 1fr;
+  }
+  &-title {
+    font-family: $font-comic;
+    text-transform: uppercase;
+    font-size: 20px;
+    @media (min-width: $breakpointMinTablet) {
+      font-size: 24px;
     }
-    &-title {
-      font-family: $font-comic;
-      text-transform: uppercase;
-      font-size: 1.5rem;
-      grid-column: 3/4;
-    }
-    &-network {
+  }
+  &__network {
+    grid-row: 2/3;
+    display: flex;
+
+    justify-content: space-evenly;
+    @media (min-width: $breakpointMinTablet) {
       display: grid;
-      grid-template-rows: 2;
+      grid-template-rows: 30px;
+      grid-template-columns: 40px 150px 60px 210px 40px 170px;
+    }
+    @media (min-width: $breakpointMinDesktop) {
+      grid-template-columns: 40px 160px repeat(2, 50px 200px);
+    }
+    &-icon {
+      display: flex;
+      justify-content: flex-end;
+      padding: 2px 8px 0 0;
+
+      @media (min-width: $breakpointMinTablet) {
+        padding: 0 8px 0 0;
+      }
+    }
+    &-link {
+      display: none;
+
+      @media (min-width: $breakpointMinTablet) {
+        display: inline;
+        padding: 0;
+        font-family: $font-text;
+        color: $blue-color;
+
+        display: flex;
+        align-items: center;
+        &:hover {
+          background-color: $egg-color;
+          width: max-content;
+          border-radius: 2px;
+        }
+      }
     }
   }
 }

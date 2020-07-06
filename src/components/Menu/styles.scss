@@ -9,16 +9,50 @@
     list-style-type: none;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: 70px;
     &__item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Londrina Solid', cursive;
-      &__logo {
+      @include flex-center;
+      font-family: $font-comic;
+      &-logo {
+        grid-column: 2/3;
         border-radius: 50%;
+      }
+      &-link {
+        border-radius: 2px;
+        color: $blue-color;
+        font-family: $font-comic;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: $egg-color;
+        padding: 8px 16px;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        &:hover {
+          border: 2px dotted $blue-color;
+          color: $blue-color;
+          //opacity: 0.6;
+          transition: 0.1s;
+        }
       }
     }
   }
+}
+
+.selected {
+  background-color: $blue-color;
+  opacity: 0.9;
+  border-radius: 2px;
+  color: $egg-color;
+  font-family: $font-comic;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  &:hover {
+    color: $egg-color;
+    pointer-events: none;
+  }
+}
+.selected-nologo {
+  display: none;
 }

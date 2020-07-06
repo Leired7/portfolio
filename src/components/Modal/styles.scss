@@ -1,0 +1,52 @@
+@import '../_vars';
+
+.modal {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &__content {
+    border-radius: 36px;
+    background-color: $egg-color;
+    max-width: 300px;
+    padding: 10px 20px;
+    height: 90vh;
+    margin: 6vh auto;
+    position: relative;
+
+    @media (min-width: $breakpointMinTablet) {
+      max-width: 500px;
+      max-height: 500px;
+      margin: 16vh auto;
+    }
+    &-button {
+      display: flex;
+      justify-content: flex-end;
+      margin: 8px 8px;
+    }
+  }
+  &-button {
+    font-family: $font-text;
+    font-size: 14px;
+    width: 72px;
+    border-radius: 2px;
+    color: $white-color;
+    font-family: $font-comic;
+    font-size: 16px;
+    background-color: $blue-color;
+    padding: 8px 16px;
+    border: none;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    &:active {
+      background-color: $white-color;
+      color: $blue-color;
+      width: max-content;
+      text-decoration: none;
+      border: none;
+    }
+  }
+}
