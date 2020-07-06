@@ -4,6 +4,8 @@ import './styles.scss';
 import aboutMe from 'services/aboutMe';
 import Modal from '../Modal/index';
 
+import CV from 'images/CV_LeireDíez_Desarrolladora_Web.pdf';
+
 function About() {
   const [showModal, setShowModal] = useState(false);
 
@@ -31,18 +33,20 @@ function About() {
             })}
           <div className="about__content-skills">
             <button
-              className="about__content-skills__button-skills"
+              className="about__content-skills-button"
               onClick={handleClick}
             >
               Habilidades
             </button>
             {showModal && <Modal onClose={handleClose} />}
-            <button
-              onClick={}
-              className="about__content-skills__button-curriculum"
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__content-skills-link"
             >
-              Currículum
-            </button>
+              Curriculum
+            </a>
           </div>
         </div>
       </div>

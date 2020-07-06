@@ -51,23 +51,21 @@
       @include flex-center;
       flex-direction: column;
 
-      &__button {
-        &-skills,
-        &-curriculum {
-          width: 200px;
-          border-radius: 2px;
-          color: $blue-color;
-          font-family: $font-comic;
-          font-size: 16px;
-          background-color: $egg-color;
-          padding: 8px 16px;
-          border: none;
-          letter-spacing: 1.5px;
-          margin-bottom: 16px;
-          @media (min-width: $breakpointMinTablet) {
-            justify-content: space-around;
-            margin: 32px 0 0 0;
-          }
+      &-button,
+      &-link {
+        width: 200px;
+        border-radius: 2px;
+        color: $blue-color;
+        font-family: $font-comic;
+        font-size: 16px;
+        background-color: $egg-color;
+        padding: 8px 16px;
+        border: none;
+        letter-spacing: 1.5px;
+        margin-bottom: 16px;
+        @media (min-width: $breakpointMinTablet) {
+          justify-content: space-around;
+          margin: 32px 0 0 0;
         }
 
         &:hover {
@@ -76,6 +74,10 @@
           //opacity: 0.6;
           transition: 0.1s;
         }
+      }
+      &-link {
+        text-decoration: none;
+        @include flex-center;
       }
     }
   }
