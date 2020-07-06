@@ -37,7 +37,10 @@ function About() {
               Habilidades
             </button>
             {showModal && <Modal onClose={handleClose} />}
-            <button className="about__content-skills__button-curriculum">
+            <button
+              onClick={}
+              className="about__content-skills__button-curriculum"
+            >
               Currículum
             </button>
           </div>
