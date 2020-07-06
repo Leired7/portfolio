@@ -3,7 +3,7 @@
 .welcome {
   &__container {
     @include flex-center;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 160px);
     width: 100vw;
     background-color: #282c34;
     background-image: url($orange-noiseURL);
@@ -23,6 +23,7 @@
     height: auto;
     width: 300px;
     margin-top: 16px;
+    background-image: url($component-noiseURL);
   }
   &__header {
     @include flex-center;
