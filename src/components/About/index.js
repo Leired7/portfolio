@@ -4,7 +4,7 @@ import './styles.scss';
 import aboutMe from 'services/aboutMe';
 import Modal from '../Modal/index';
 
-import CV from 'images/CV_LeireDíez_Desarrolladora_Web.pdf';
+import CV from 'images/CV_LeireDiez_Desarrolladora_Web.pdf';
 
 function About() {
   const [showModal, setShowModal] = useState(false);
