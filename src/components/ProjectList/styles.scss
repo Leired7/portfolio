@@ -29,22 +29,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (min-width: $breakpointMinTablet) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start;
-    }
-    @media (min-width: $breakpointMinDesktop) {
-      flex-direction: row;
-    }
   }
   &-item {
     flex: 0 1 30%;
     list-style-type: none;
     padding: 0;
     height: auto;
+    margin-top: 2rem;
     @media (min-width: $breakpointMinTablet) {
       @include flex-center;
       flex-direction: column;

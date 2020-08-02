@@ -23,14 +23,17 @@ function Card({
         <div className="card__header">
           <h3 className="card__header-title">{name}</h3>
         </div>
+        
         <div className="card__body">
           <img src={image} alt={name} className="card__body-image" />
-          <p className="card__body-description">{description}</p>
+          
+          <div className="card__body-technology">
+            <p className="card__body-description">{description}</p>
+            <h3 className="card__body-technology-title">TECNOLOGÍAS: </h3>
+            <p className="card__body-technology-description">{technology}</p>
+          </div>
         </div>
-        <div className="card__body-technology">
-          <h3 className="card__body-technology-title">TECNOLOGÍAS: </h3>
-          <p className="card__body-technology-description">{technology}</p>
-        </div>
+        
 
         <div className="card__links-container">
           <a
