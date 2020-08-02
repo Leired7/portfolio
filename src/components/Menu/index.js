@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './styles.scss';
-import logo from 'images/Logo.png';
+import logo from 'assets/Logo.png';
 
 import { NavLink } from 'react-router-dom';
 

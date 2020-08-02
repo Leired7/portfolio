@@ -4,7 +4,7 @@ export const projectList = [
     name: 'prueba',
     description:
       'Visualizador de la posición de la Estación Espacial Internacional',
-    image: require('images/projects/whereisISS.png'),
+    image: require('assets/projects/whereisISS.png'),
     codeUrl: 'https://github.com/WildCodeSchool-Project1/cityProject',
     webUrl: 'https://wildcodeschool-project1.github.io/cityProject/',
     backgroundColor: '#2BA1D4',
@@ -15,7 +15,7 @@ export const projectList = [
     description:
       'Proyecto de visibilización de las lesbianas que tienen artículo en la Wikipedia',
     technology: 'Reactjs, Javascript, Scss, react-bulma-components',
-    image: require('images/projects/alolesbiana.png'),
+    image: require('assets/projects/alolesbiana.png'),
     codeUrl: 'https://github.com/Leired7/alolesbiana',
     codeArialLabel: 'Repositorio código: Aló lesbiana!',
     webUrl: 'https://alolesbiana.netlify.app/',
@@ -29,7 +29,7 @@ export const projectList = [
     description:
       'Aplicación web de recogida de datos de una placa Arduino y visualización gráfica de los datos.',
     technology: 'Reactjs, Javascript, Scss, Node.js, Express, Mysql',
-    image: require('images/projects/zoecedrion.png'),
+    image: require('assets/projects/zoecedrion.png'),
     codeUrl: 'https://github.com/Lab-box-cedrion/zoe',
     codeArialLabel: 'Repositorio código: Zoe-Cedrion',
     webUrl: 'https://zoe-cedrion.netlify.app',
@@ -42,7 +42,7 @@ export const projectList = [
     description:
       'Visualizador de la posición de la Estación Espacial Internacional',
     technology: 'HTML5, CSS, Javascript, Ness.css',
-    image: require('images/projects/whereisISS.png'),
+    image: require('assets/projects/whereisISS.png'),
     codeUrl: 'https://github.com/Leired7/WhereIsTheIss',
     codeArialLabel: 'Repositorio código: Where is the ISS?',
     webUrl: 'https://leired7.github.io/WhereIsTheIss/',
@@ -54,7 +54,7 @@ export const projectList = [
     name: 'Alternative Copenhage',
     description: ' Blog sobre visitas alternativas a la ciudad de Copenhage.',
     technology: 'HTML5, CSS, Bootstrap',
-    image: require('images/projects/copenhageanotherperspective.png'),
+    image: require('assets/projects/copenhageanotherperspective.png'),
     codeUrl: 'https://github.com/WildCodeSchool-Project1/cityProject',
     codeArialLabel: 'Repositorio código: Alternative Copenhage',
     webUrl: 'https://wildcodeschool-project1.github.io/cityProject/',
