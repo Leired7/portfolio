@@ -18,9 +18,9 @@ const aboutMe = [
   {
     skills: {
       technologies:
-        'HTML5, CSS3, Sass, BEM, Boostrap, Javascript ES6, Reactjs, Nodejs, Express, MySQL',
+        'HTML5, CSS3, Sass,  Boostrap, Javascript ES6, Reactjs, Nodejs, Express, MySQL',
       tools: 'git, VisualStudioCode, Linux, Slack, Trello',
-      framework: 'Agile, SCRUM',
+      framework: 'Agile, SCRUM, BEM',
     },
   },
 ];
