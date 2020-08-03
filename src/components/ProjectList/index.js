@@ -22,9 +22,9 @@ function ProjectList() {
         <ul className="projects__container-list">
           {orderList.map((project) => {
             return (
-              <li className="projects__container-item">
+              <li className="projects__container-item" key={project.id}>
                 <Card
-                  key={project.id}
+                  
                   backgroundColor={project.backgroundColor}
                   codeArialLabel={project.codeArialLabel}
                   codeUrl={project.codeUrl}
