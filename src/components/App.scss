@@ -14,3 +14,9 @@
     height: 100%;
   }
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr 90px;
+  min-height: 100vh;
+}

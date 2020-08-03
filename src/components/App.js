@@ -31,7 +31,7 @@ class App extends Component {
 
     return (
       <Fragment>
-        <div className="page__container">
+        <div className=" page__container grid">
           <HomePage />
         </div>
       </Fragment>

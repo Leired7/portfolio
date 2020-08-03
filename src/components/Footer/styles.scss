@@ -8,12 +8,6 @@
   align-items: center;
   height: 90px;
   z-index: 30;
-  @media (min-width: 1024px) and (orientation: landscape) {
-    height: calc(100vh - 160px);
-  }
-  @media (min-width: $breakpointMinTablet) {
-    height: 80px;
-  }
 }
 .container {
   display: grid;

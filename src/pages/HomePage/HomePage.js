@@ -7,7 +7,7 @@ import './styles.scss';
 
 function HomePage({ aboutIsClosed, toogleAbout }) {
   return (
-    <Fragment>
+    <Fragment className="grid">
       <Header toogleAbout={toogleAbout} />
       <Main aboutIsClosed={aboutIsClosed} />
       <Footer />

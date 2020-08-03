@@ -1,7 +1,7 @@
 const aboutMe = [
   {
     description:
-      'Me embarqué en el mundo de la programación porque gusta mucho la tecnología. Necesitaba un nuevo desafío personal y laboral tras 10 años trabajando en la industria automovilística (entré de operaria y llegué a ser responsable de departamento). Entre mis aficiones está el origami y durante una década jugué al futbol de medio-centro. Me gusta desplazarme por la ciudad en bicicleta o andando, me permite pensar y escuchar mis podcast favoritos mientras observo el arte de las paredes.',
+      'Me embarqué en el mundo de la programación porque gusta mucho la tecnología. Necesitaba un nuevo desafío personal y laboral tras 10 años trabajando en la industria automovilística (entré de operaria y llegué a ser responsable de departamento). Entre mis aficiones está el origami y durante una década jugué al futbol de medio-centro. Me gusta desplazarme por la ciudad en bicicleta o andando, me permite pensar y escuchar mis podcast favoritos.',
   },
   {
     description:
@@ -13,13 +13,13 @@ const aboutMe = [
   },
   {
     description:
-      'Entre mis objetivos está escribir código de la manera más legible y eficiente para facilitarme (y facilitar al equipo de trabajo) la re-lectura del futuro.',
+      'Trabajo a diario para mejorar mis aptitudes en los siguientes campos: código testeado, limpio, eficiente y cooperativo. Diseño de experiencias usuario atractivas, accesibles, seguras y funcionales. Desarrollarme en ambientes comprometidos con metodologías transparentes, colaborativas, multidisciplinares.',
   },
   {
     skills: {
-      languages:
+      technologies:
         'HTML5, CSS3, Sass, BEM, Boostrap, Javascript ES6, Reactjs, Nodejs, Express, MySQL',
-      tools: 'git, VisualStudioCode, Linux, Mac',
+      tools: 'git, VisualStudioCode, Linux, Slack, Trello',
       framework: 'Agile, SCRUM',
     },
   },

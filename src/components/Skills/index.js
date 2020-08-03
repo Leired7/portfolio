@@ -14,9 +14,9 @@ function Skills() {
             .filter((item) => item.skills)
             .map((item, index) => (
               <div key={index}>
-                <h2 className="skills__content-subtitle">Lenguajes</h2>
+                <h2 className="skills__content-subtitle">Tecnologías</h2>
                 <p className="skills__content-text">
-                  [{item.skills.languages}]
+                  [{item.skills.technologies}]
                 </p>
                 <h2 className="skills__content-subtitle">Herramientas</h2>
                 <p className="skills__content-text">[{item.skills.tools}]</p>
