@@ -10,13 +10,7 @@ library.add(fab, faCheckSquare, faCoffee);
 
 const App = () => {
   
-
-  
-
-  
-    
-
-    return (
+return (
       <Fragment>
         <div className=" page__container grid">
           <HomePage />
